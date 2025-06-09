@@ -1,1 +1,4 @@
-# music-visualizer
+# Music Visualizer Languages
+-JS 
+-HTML
+-CSS
