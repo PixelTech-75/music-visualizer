@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Music Visualizer</h1>
+    <input type="file" id="audio-upload" accept="audio/*">
+    <div id="audio-player-container">
+        <!-- Audio element is dynamically inserted -->
+        <div id="custom-controls">
+            <button id="toggle-btn">Play</button>
+            <button id="speed-btn">Speed: 1x</button>
+        </div>
+    </div>
+    <canvas id="visualizer" width="1100" height="350"></canvas>
+    <div id="legend">
+        <span class="legend-color" style="background:#4caf50;"></span> Volume (Overall)
+        <span class="legend-color" style="background:#2196f3;"></span> Bass
+        <span class="legend-color" style="background:#ff9800;"></span> Percussion (Highs)
+        <span class="legend-color" style="background:#9c27b0;"></span> Instruments (Mids)
+        <span class="legend-color" style="background:#e91e63;"></span> Vocals
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
